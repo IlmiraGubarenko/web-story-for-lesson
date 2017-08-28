@@ -44,11 +44,23 @@ button{
 .justify-sp-between{
     justify-content: space-between;
 }
+.orange-text{
+    color: #ff5912;
+}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENT START */
 .custom-icon{
     display: inline-block;
+}
+.title{
+    font-family: 'Harmonia_black';
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.title.big{
+    font-size: 52px;
 }
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -69,6 +81,10 @@ header .top-header .social-nav a+a{
 }
 header .bottom-header{
     padding: 40px 0;
+}
+.items-carousel{
+    min-height: 650px;
+    background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
 }
 /* DEFAULT COMPONENT END */
 
@@ -105,49 +121,49 @@ header .bottom-header .user-controls li>span.label{
     font:  10px/1 "Harmonia_light", sans-serif;
     border-radius: 50%;
 }
-.icon-search-ic-hover{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.icon-search-ic:hover{
+    background-position: -81px 0px;
 }
-.orange-hover:hover .icon-search-ic{
-    opacity: 0;
+.icon-user-ic:hover{
+    background-position: 0px -59px;
 }
-.orange-hover:hover .icon-search-ic-hover{
-    opacity: 1;
+.icon-cart-ic:hover{
+    background-position: -20px -59px;
 }
-.icon-user-ic-hover{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.orange-hover:hover .icon-user-ic{
-    opacity: 0;
-}
-.orange-hover:hover .icon-user-ic-hover{
-    opacity: 1;
-}
-.icon-cart-hover-ic{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.orange-hover:hover .icon-cart-ic-grey{
-    opacity: 0;
-}
-.orange-hover:hover .icon-cart-hover-ic{
-    opacity: 1;
-}
-
 /* HEADER END */
+
+/* MAIN START */
+
+/* CAROUSEL START */
+.items-carousel .items-carousel-description .items-carousel-text>span{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #3c4751;
+    line-height: 1.6;
+}
+.items-carousel .items-carousel-description .items-carousel-text>p{
+    font-size: 16px;
+    color: #495662;
+    line-height: 1.9;
+    margin-top: 17px;
+}
+.items-carousel .items-carousel-description .price-wrapper{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    margin-top: 65px;
+}
+.items-carousel .items-carousel-description .price-wrapper a{
+    margin-left: 32px;
+}
+.items-carousel .items-carousel-description .price-wrapper a:hover{
+    color: #ff5912;
+}
+.items-carousel .items-carousel-description .price-wrapper .icon-cart-ic{
+    background-position: -20px -59px;
+    margin-right: 10px;
+}
+/* CAROUSEL END */
+
+/* MAIN END */
 
 /* ALL STYLES END */
