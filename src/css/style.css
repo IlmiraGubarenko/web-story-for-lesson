@@ -6,6 +6,7 @@ body{
     margin: 0;
     color: #111;
     font:  12px/1 "Harmonia_regular", sans-serif;
+    background-color: #f4f6f8;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -62,6 +63,32 @@ button{
 .title.big{
     font-size: 52px;
 }
+.subtitle{
+    display: block;
+    font-size: 16px;
+    color: #495662;
+    margin-bottom: 70px;
+}
+.default-section{
+    padding: 60px 0;
+}
+.item{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    background-color: #fff;
+    padding: 30px 10px;
+    transition: all .3s linear;
+}
+.item:hover{
+    box-shadow: 0 5px 15px rgb( 0, 0, 0 );
+}
+.item .item-title{
+    margin: 30px 0;
+    color: #34404b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -85,6 +112,7 @@ header .bottom-header{
 .items-carousel{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
+    margin-bottom: 60px;
 }
 /* DEFAULT COMPONENT END */
 
@@ -94,13 +122,16 @@ header .bottom-header{
 header .bottom-header .header-nav{
     font-size: 16px;
     color: #34404b;
-    margin-right: 160px;
+    margin-left: 84px;
 }
 header .bottom-header .header-nav a+a {
     margin-left: 40px;
 }
 header .bottom-header .header-nav a:hover{
     color: #ff5912;
+}
+header .bottom-header .user-controls{
+    margin-left: auto;
 }
 header .bottom-header .user-controls li{
     position: relative;
