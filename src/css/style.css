@@ -48,6 +48,18 @@ button{
 .orange-text{
     color: #ff5912;
 }
+.red-bg{
+    background-color: #e12e3f;
+}
+.black-bg{
+    background-color: #34404b;
+}
+.blue-bg{
+    background-color: #3ab3ff;
+}
+.green-bg{
+    background-color: #2fd967;
+}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENT START */
@@ -128,6 +140,12 @@ header .bottom-header{
     min-height: 650px;
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
     margin-bottom: 60px;
+}
+footer{
+    padding: 85px 0;
+    background-color: #fff;
+    font-size: 14px;
+    color: #28313b;
 }
 /* DEFAULT COMPONENT END */
 
@@ -211,5 +229,39 @@ header .bottom-header .user-controls li>span.label{
 /* CAROUSEL END */
 
 /* MAIN END */
+
+/* FOOTER START */
+footer .logo .sign{
+    display: block;
+    margin-top: 22px;
+}
+footer .footer-nav{
+    width: 500px;
+}
+footer .footer-nav ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+footer .footer-nav ul>li{
+    color: #34404b;
+}
+footer .footer-nav ul>li:hover,
+footer .footer-nav li>a:hover{
+    color: #ff5912;
+}
+footer .footer-nav ul>li+li{
+    margin-top: 20px;
+}
+footer .payment-methods .payment-methods-title{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+footer .payment-methods .payment-methods-icon{
+    margin-top: 20px;
+}
+footer .payment-methods .payment-methods-icon>span+span{
+    margin-left: 10px;
+}
+/* FOOTER END */
 
 /* ALL STYLES END */
