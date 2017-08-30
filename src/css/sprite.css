@@ -46,9 +46,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 24px;
   height: 17px;
 }
+.icon-like-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -38px -80px;
+  width: 19px;
+  height: 16px;
+}
 .icon-like-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -80px;
+  background-position: -19px -80px;
   width: 19px;
   height: 16px;
 }
@@ -94,9 +100,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 18px;
   height: 18px;
 }
-.icon-share-ic {
+.icon-share-hover-ic {
   background-image: url(../img/sprite.png);
   background-position: -44px -59px;
+  width: 19px;
+  height: 17px;
+}
+.icon-share-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -80px;
   width: 19px;
   height: 17px;
 }
