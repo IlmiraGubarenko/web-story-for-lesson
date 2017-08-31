@@ -34,6 +34,9 @@ textarea{
 button{
     cursor: pointer;
 }
+label{
+    margin-bottom: 0;
+}
 /* RESET END */
 
 /* DEFAULT CLASSES START */
@@ -279,6 +282,31 @@ button{
 .add-to-cart-hover .icon-add-to-cart-hover-ic{
     margin-right: 10px;
 }
+.subscribe-form{
+    padding: 37px 42px;
+}
+.subscribe-input-group{
+    margin-right: 30px;
+}
+.subscribe-input-group label{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.subscribe-input{
+    color: #7c8791;
+    font-size: 14px;
+    font-family: 'Harmonia_italic';
+    min-width: 255px;
+}
+.join-us-button{
+    font-family: 'Harmonia_semibold';
+    padding: 15px 28px;
+    font-size: 14px;
+    border: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    color: #fff;
+}
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -308,6 +336,7 @@ footer{
     padding: 85px 0;
     font-size: 14px;
     color: #28313b;
+    margin-top: 60px;
 }
 /* DEFAULT COMPONENT END */
 
@@ -404,12 +433,13 @@ header .bottom-header .user-controls li>span.label{
             transform: rotate(45deg);
     position: absolute;
     left: 0;
+    top: 0;
 }
 .sales-block-percent{
     position: absolute;
-    left: 22px;
-    top: 8px;
+    top: 10px;
     text-align: center;
+    z-index: 1;
 }
 .sales-block-percent .sales-text,
 .sales-block-percent .sales-percent{
@@ -427,7 +457,7 @@ header .bottom-header .user-controls li>span.label{
 }
 .sales-block-text{
     border-right: 1px solid #f5f5f6;
-    margin-left: -15px;
+    padding-right: 35px;
 }
 .sales-block-text .title{
     display: block;
@@ -440,9 +470,6 @@ header .bottom-header .user-controls li>span.label{
     display: block;
     font-size: 12px;
     color: #495662;
-}
-.sales-block-price{
-    margin-right: -15px;
 }
 .sales-block-price .sales-price{
     font-family: 'Harmonia_black';
@@ -466,6 +493,16 @@ header .bottom-header .user-controls li>span.label{
 }
 .adv-area .multipli{
     font-size: 12px;
+}
+.subscribe-description .new-letter{
+    font-family: 'Harmonia_bold';
+    font-size: 18px;
+    margin-right: 25px;
+}
+.subscribe-description .join-us{
+    font-family: 'Harmonia_italic';
+    font-size: 14px;
+    color: #34404b;
 }
 /* MAIN END */
 
