@@ -85,7 +85,15 @@ label{
 .orange-bg{
     background-color: #ff5912;
 }
-
+.sidebar-default-style{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+    color: rgba(52, 64, 75, .6);
+    line-height: 3.1;
+}
+.sidebar-default-style .checkbox-group label{
+    color: rgba(52, 64, 75, .6);
+}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENT START */
@@ -131,6 +139,29 @@ label{
 }
 .default-section{
     padding: 60px 0;
+}
+.checkbox-group input[type="checkbox"]{
+    display: none;
+}
+.checkbox-group label{
+     font-size: 16px;
+     color: #34404b;
+    cursor: pointer;
+ }
+.checkbox-group label::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+.checkbox-group input[type="checkbox"]:checked + label{
+    color: #ff5912;
+}
+.checkbox-group input[type="checkbox"]:checked + label::before{
+    border-color: #ff5912;
 }
 .item{
     font-family: 'Harmonia_bold';
@@ -220,9 +251,11 @@ label{
 .more-info-on-hover .item-controls li+li{
     margin-left: 30px;
 }
+.new-item{
+    margin-bottom: 75px;
+}
 .load-more{
-    padding: 25px 0 25px 15px;
-    margin-top: 75px;
+    padding: 25px 0;
 }
 .load-more>span+span{
     margin-left: 5px;
@@ -306,6 +339,9 @@ label{
     -webkit-border-radius: 0;
             border-radius: 0;
     color: #fff;
+}
+.category-wrap .subscribe{
+    margin-top: 60px;
 }
 header .top-header{
     border-bottom: 1px solid #edeff1;
@@ -482,7 +518,6 @@ header .bottom-header .user-controls li>span.label{
 .adv-area{
     padding: 30px 180px;
     color: #34404b;
-
 }
 .adv-area>span{
     display: block;
@@ -504,6 +539,26 @@ header .bottom-header .user-controls li>span.label{
     font-size: 14px;
     color: #34404b;
 }
+
+.category-wrap{
+    padding-top: 120px;
+}
+.aside-section{
+    padding: 40px;
+}
+.aside-section + .aside-section{
+    margin-top: 30px;
+}
+.aside-section-title{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 25px;
+}
+.category-wrap .item{
+    margin-bottom: 30px;
+}
+
 /* MAIN END */
 
 /* FOOTER START */
