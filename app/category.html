@@ -98,10 +98,16 @@
                                 <span>Price Filtter</span>
                             </div>
                             <div class="range">
-                                <div class="range-info">
-                                    <div id="slider-range"></div>
-                                    <label for="amount">Price range:</label>
-                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                <div id="slider-range"></div>
+                                <div class="add-range-value flex-container">
+                                    <div class="range-input-group">
+                                        <label for="fromValue">From</label>
+                                        <input type="number" name="fromValue" id="fromValue" min="0">
+                                    </div>
+                                    <div class="range-input-group">
+                                        <label for="toValue">To</label>
+                                        <input type="number" name="toValue" id="toValue" min="0">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -132,12 +138,24 @@
                             <div class="aside-section-title">
                                 <span>Brands</span>
                             </div>
-                            <ul class="brands-product sidebar-default-style">
-                                <li><a href="">Reebok</a></li>
-                                <li><a href="">Addidas</a></li>
-                                <li><a href="">Nike</a></li>
-                                <li><a href="">Active</a></li>
-                            </ul>
+                            <form action="" class="sidebar-default-style">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandReebok" id="brandReebok" checked>
+                                    <label for="brandReebok">Reebok</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandAddidas" id="brandAddidas">
+                                    <label for="brandAddidas">Addidas</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandNike" id="brandNike">
+                                    <label for="brandNike">Nike</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" name="brandActive" id="brandActive">
+                                    <label for="brandActive">Active</label>
+                                </div>
+                            </form>
                         </div>
                     </aside>
                 </div>
@@ -484,7 +502,7 @@
             </div>
         </section>
     </div>
-</main>
+</main> .caca ghb gghtt git
 <!-- MAIN END -->
 
 <!-- FOOTER START -->

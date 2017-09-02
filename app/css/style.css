@@ -88,11 +88,11 @@ label{
 .sidebar-default-style{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
-    color: rgba(52, 64, 75, .6);
+    color: #34404b;
     line-height: 3.1;
 }
 .sidebar-default-style .checkbox-group label{
-    color: rgba(52, 64, 75, .6);
+    color: #34404b;
 }
 /* DEFAULT CLASSES END */
 
@@ -175,8 +175,8 @@ label{
 }
 .item:hover,
 .best-item:hover{
-    -webkit-box-shadow: 0 5px 15px rgb( 0, 0, 0 );
-            box-shadow: 0 5px 15px rgb( 0, 0, 0 );
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .item .item-img{
     -webkit-transition: all .3s linear;
@@ -256,6 +256,18 @@ label{
 }
 .load-more{
     padding: 25px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .load-more>span+span{
     margin-left: 5px;
@@ -283,8 +295,6 @@ label{
 }
 .best-item-description{
     padding-right: 20px;
-}
-.border-left-grey{
     border-left: 1px solid #f5f5f6;
     padding-left: 20px;
 }
@@ -297,6 +307,9 @@ label{
 }
 .best-item:hover .best-item-info{
     opacity: 0;
+}
+ul.item-evaluation>li{
+    display: inline-block;
 }
 .add-to-cart-hover{
     opacity: 0;
@@ -397,18 +410,25 @@ header .bottom-header .user-controls li{
     position: relative;
 }
 header .bottom-header .user-controls li+li{
-    margin-left: 30px;
+    margin-left: 28px;
+}
+header .bottom-header .user-controls li:last-child{
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
 }
 header .bottom-header .user-controls li>span{
     position: absolute;
-    bottom: 25px;
-    right: 1px;
+    bottom: 20px;
+    right: 2px;
+    padding-top: 4px;
 }
 header .bottom-header .user-controls li>span.label-default{
     background-color: #34404b;
 }
 header .bottom-header .user-controls li>span.label{
-    padding: 5px 7px;
+    width: 18px;
+    height: 18px;
     font:  10px/1 "Harmonia_light", sans-serif;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -600,10 +620,13 @@ footer .payment-methods .payment-methods-title{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
 }
-footer .payment-methods .payment-methods-icon{
+footer .payment-methods ul.payment-methods-icon{
     margin-top: 20px;
 }
-footer .payment-methods .payment-methods-icon>span+span{
+footer .payment-methods ul.payment-methods-icon>li{
+    display: inline-block;
+}
+footer .payment-methods ul.payment-methods-icon>li+li{
     margin-left: 10px;
 }
 /* FOOTER END */
