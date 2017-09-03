@@ -39,8 +39,8 @@ $( function() {
     range.slider({
         range: true,
         min: 0,
-        max: 500,
-        values: [ 75, 300 ],
+        max: 1000,
+        values: [ 100, 500 ],
         create: onCreateRange,
         slide: changeMinMaxVal,
         change: changeMinMaxVal

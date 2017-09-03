@@ -564,10 +564,67 @@ header .bottom-header .user-controls li>span.label{
     padding-top: 120px;
 }
 .aside-section{
-    padding: 40px;
+    padding: 40px 40px 30px;
 }
 .aside-section + .aside-section{
     margin-top: 30px;
+}
+.range{
+    margin-top: 65px;
+}
+.ui-slider-horizontal{
+    height: 3px;
+}
+.ui-widget-content{
+    background: #edf0f2;
+}
+.ui-widget.ui-widget-content{
+    border: 0;
+}
+.ui-corner-all{
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.ui-widget-header {
+    border: 0;
+    background: #34404b;
+}
+.ui-widget-content .ui-state-default{
+    border: 0;
+    background: #34404b;
+}
+.ui-slider .ui-slider-handle {
+    width: 10px;
+    height: 10px;
+}
+.min-value, .max-value{
+    position: absolute;
+    bottom: 200%;
+    font-size: 14px;
+    color: #34404b;
+    font-family: "Harmonia_semibold";
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+}
+.range-input-reoup{
+    margin-top: 35px;
+    font-size: 14px;
+    color: #34404b;
+    font-family: "Harmonia_semibold";
+}
+.range-input-reoup>input{
+    background-color: #edf0f2;
+    width: 45px;
+    height: 27px;
+    margin-left: 14px;
+    padding: 0 3px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .aside-section-title{
     font-family: 'Harmonia_black';
