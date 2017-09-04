@@ -429,6 +429,7 @@ header .bottom-header .user-controls li>span.label{
 
 .kit{
     padding: 20px 60px;
+    border: 1px solid #eaedef;
 }
 .sales-block{
     position: relative;
@@ -494,6 +495,7 @@ header .bottom-header .user-controls li>span.label{
 .adv-area{
     padding: 30px 180px;
     color: #34404b;
+    border: 1px solid #eaedef;
 }
 .adv-area>span{
     display: block;
