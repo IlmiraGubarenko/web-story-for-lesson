@@ -74,5 +74,8 @@ $( function() {
         });
     });
 
+    // formstayler init
+    $('.custom-number').styler();
+
 
 } );

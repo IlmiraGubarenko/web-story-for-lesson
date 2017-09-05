@@ -374,6 +374,7 @@ header .top-header .social-nav a+a{
     margin-left: 20px;
 }
 header .bottom-header{
+    border-bottom: 1px solid #edeff1;
     padding: 40px 0;
 }
 .items-carousel{
@@ -438,17 +439,22 @@ header .bottom-header .user-controls li>span.label{
 /* MAIN START */
 
 /* CAROUSEL START */
-.items-carousel .items-carousel-description .items-carousel-text>span{
+.items-carousel .items-carousel-description .items-carousel-text>span,
+.product-wrap .product-description .product-text>span{
     font-family: 'Harmonia_semibold';
     font-size: 18px;
     color: #3c4751;
-    line-height: 1.6;
 }
-.items-carousel .items-carousel-description .items-carousel-text>p{
+.items-carousel .items-carousel-description .items-carousel-text>p,
+.product-wrap .product-description .product-text>p{
     font-size: 16px;
     color: #495662;
     line-height: 1.9;
     margin-top: 17px;
+}
+.product-wrap .product-description .product-text>p{
+    margin-top: 25px;
+    padding-right: 170px;
 }
 .items-carousel .items-carousel-description .price-wrapper{
     font-family: 'Harmonia_semibold';
@@ -643,6 +649,58 @@ input[type=number]::-webkit-outer-spin-button {
 .product-carousel{
     width: 330px;
 }
+.order-form{
+    padding: 40px 0;
+    margin: 40px 70px 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+    font-family: "Harmonia_semibold";
+}
+.choos-size,
+.quantity{
+    width: 50%;
+}
+.quantity{
+    border-left: 1px solid #edeff1;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.choos-size span,
+.quantity span{
+    margin-right: 20px;
+    font-size: 18px;
+    color: #34404b;
+}
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    color: #34404b;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio:not(:first-child)::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 1px;
+    background: #34404b;
+    margin: 0 10px;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+/*.size-radio + .size-radio{*/
+    /*margin-left: 20px;*/
+/*}*/
+
 /* MAIN END */
 
 /* FOOTER START */

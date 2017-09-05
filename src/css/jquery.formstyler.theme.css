@@ -1,0 +1,67 @@
+.jq-number {
+	position: relative;
+	vertical-align: middle;
+	padding: 0 10px;
+}
+.jq-number__field {
+	width: 60px;
+	border: none;
+}
+.jq-number__field input {
+	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	font-family: 'Harmonia_semibold';
+	font-size: 18px;
+	color: #ff5912;
+	text-align: center;
+}
+.jq-number__spin {
+	position: absolute;
+	left: 0;
+	/*right: 0;*/
+	bottom: 27px;
+	/*width: 20px;*/
+	border: none;
+	cursor: pointer;
+}
+.jq-number__spin:before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 9px;
+	height: 2px;
+	border: none;
+	background: #666;
+}
+.jq-number__spin:after {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 9px;
+	height: 2px;
+	border: none;
+	background: #666;
+}
+.jq-number__spin.plus {
+	right: 20px;
+}
+.jq-number__spin.minus {
+	left: 49px;
+}
+.jq-number__spin.minus:after {
+	display: none;
+}
+.jq-number__spin.plus:after {
+	top: 11px;
+	left: 13px;
+	width: 2px;
+	height: 9px;
+	border: none;
+	background: #666;
+}
+
