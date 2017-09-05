@@ -250,14 +250,13 @@ label{
 .new-item{
     margin-bottom: 75px;
 }
-.load-more{
-    padding: 25px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .load-more>span+span{
     margin-left: 5px;
+}
+.load-more>a{
+    display: block;
+    height: 100%;
+    padding: 25px 0;
 }
 .circle{
     display: inline-block;
@@ -508,7 +507,7 @@ header .bottom-header .user-controls li>span.label{
     margin-right: 20px;
 }
 .adv-area{
-    padding: 30px 180px;
+    padding: 30px 0;
     color: #34404b;
     border: 1px solid #eaedef;
 }
