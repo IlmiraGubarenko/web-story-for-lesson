@@ -52,6 +52,11 @@ label{
         -ms-flex-align: center;
             align-items: center;
 }
+.align-end{
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+}
 .justify-sp-between{
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -93,6 +98,9 @@ label{
 }
 .sidebar-default-style .checkbox-group label{
     color: #34404b;
+}
+.margin-for-icon{
+    margin-left: 30px;
 }
 /* DEFAULT CLASSES END */
 
@@ -139,6 +147,19 @@ label{
 }
 .default-section{
     padding: 60px 0;
+}
+.btn-default {
+    color: #fff;
+    background-color: #ff5912;
+    border: none;
+    font-family: 'Harmonia_semibold';
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding: 15px 28px;
+}
+.btn-radius {
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
 }
 .checkbox-group input[type="checkbox"]{
     display: none;
@@ -248,9 +269,6 @@ label{
 .more-info-on-hover .item-controls li{
     display: inline-block;
 }
-.more-info-on-hover .item-controls li+li{
-    margin-left: 30px;
-}
 .new-item{
     margin-bottom: 75px;
 }
@@ -345,13 +363,7 @@ ul.item-evaluation>li{
     min-width: 255px;
 }
 .join-us-button{
-    font-family: 'Harmonia_semibold';
-    padding: 15px 28px;
     font-size: 14px;
-    border: none;
-    -webkit-border-radius: 0;
-            border-radius: 0;
-    color: #fff;
 }
 .category-wrap .subscribe{
     margin-top: 60px;
@@ -412,11 +424,6 @@ header .bottom-header .user-controls li{
 }
 header .bottom-header .user-controls li+li{
     margin-left: 28px;
-}
-header .bottom-header .user-controls li:last-child{
-    -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-            align-self: flex-end;
 }
 header .bottom-header .user-controls li>span{
     position: absolute;
@@ -649,9 +656,12 @@ input[type=number]::-webkit-outer-spin-button {
 .product-carousel{
     width: 330px;
 }
+.order-info{
+    margin-right: 70px;
+}
 .order-form{
     padding: 40px 0;
-    margin: 40px 70px 40px 0;
+    margin: 40px 0;
     border-top: 1px solid #edeff1;
     border-bottom: 1px solid #edeff1;
     font-family: "Harmonia_semibold";
@@ -667,7 +677,6 @@ input[type=number]::-webkit-outer-spin-button {
         -ms-flex-pack: end;
             justify-content: flex-end;
 }
-
 .choos-size span,
 .quantity span{
     margin-right: 20px;
@@ -700,6 +709,16 @@ input[type=number]::-webkit-outer-spin-button {
 /*.size-radio + .size-radio{*/
     /*margin-left: 20px;*/
 /*}*/
+
+.product-price{
+    font-family: 'Harmonia_black';
+    color: #34404b;
+    font-size: 20px;
+    margin-right: auto;
+}
+.product-share{
+    margin-right: 22px;
+}
 
 /* MAIN END */
 

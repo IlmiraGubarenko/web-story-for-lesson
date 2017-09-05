@@ -66,7 +66,7 @@
                     <li>
                         <a href="" class="custom-icon icon-user-ic"></a>
                     </li>
-                    <li>
+                    <li class="align-end">
                         <a href="" class="custom-icon icon-cart-ic"></a>
                         <span class="label label-default">5</span>
                     </li>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="order-info">
                             <div class="order-form">
-                                <form name="production-option" class="flex-container justify-sp-between">
+                                <form id="product-option" class="flex-container justify-sp-between">
                                     <div class="choos-size flex-container align-center">
                                         <span>Choos Size</span>
                                         <div class="size-radio-btn-group flex-container align-center">
@@ -138,8 +138,16 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="order-now">
-
+                            <div class="order-now flex-container justify-sp-between align-center">
+                                <div class="product-price">
+                                    <span>Price : $120</span>
+                                </div>
+                                <ul class="product-share flex-container align-center">
+                                    <li class="align-end"><a href=""><span class="custom-icon icon-share-ic"></span></a></li>
+                                    <li  class="margin-for-icon"><a href=""><span class="custom-icon icon-add-to-cart-ic"></span></a></a></li>
+                                    <li  class="margin-for-icon align-end"><a href=""><span class="custom-icon icon-like-ic"></span></a></a></li>
+                                </ul>
+                                <input type="submit" value="Order Now" form="product-option" class="btn btn-default btn-radius">
                             </div>
                         </div>
                     </div>
