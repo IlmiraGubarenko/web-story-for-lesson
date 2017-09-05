@@ -678,16 +678,15 @@ footer .logo .sign{
     display: block;
     margin-top: 22px;
 }
-footer ul.footer-nav{
-    column-count: 3;
-    width: 500px;
+.footer-nav{
+    min-width: 40%;
 }
-footer ul.footer-nav>li{
+footer .footer-nav ul>li{
     color: #34404b;
     line-height: 2.14;
     white-space: nowrap;
 }
-footer ul.footer-nav>li::before{
+footer .footer-nav ul>li::before{
     content: '';
     background-color: #48535d;
     border-radius: 50%;
@@ -696,10 +695,10 @@ footer ul.footer-nav>li::before{
     padding-right: 5px;
     vertical-align: middle;
 }
-footer ul.footer-nav>li:hover{
+footer .footer-nav ul>li:hover{
     color: #ff5912;
 }
-footer ul.footer-nav>li:hover::before{
+footer .footer-nav ul>li:hover::before{
     background-color: #ff5912;
 }
 /*footer .footer-nav ul>li+li{*/
