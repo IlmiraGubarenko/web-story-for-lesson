@@ -127,6 +127,9 @@ label{
 .title.big{
     font-size: 52px;
 }
+.title.small{
+    font-size: 28px;
+}
 .subtitle{
     display: block;
     font-size: 16px;
