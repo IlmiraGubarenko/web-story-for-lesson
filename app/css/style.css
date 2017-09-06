@@ -99,9 +99,6 @@ label{
 .sidebar-default-style .checkbox-group label{
     color: #34404b;
 }
-.margin-for-icon{
-    margin-left: 30px;
-}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENT START */
@@ -151,6 +148,17 @@ label{
 .default-section{
     padding: 60px 0;
 }
+.default-span{
+    font-family: 'Harmonia_semibold';
+    font-size: 18px;
+    color: #3c4751;
+}
+.default-p {
+    font-size: 16px;
+    color: #495662;
+    line-height: 1.9;
+    margin-top: 17px;
+}
 .btn-default {
     color: #fff;
     background-color: #ff5912;
@@ -168,8 +176,8 @@ label{
     display: none;
 }
 .checkbox-group label{
-     font-size: 16px;
-     color: #34404b;
+    font-size: 16px;
+    color: #34404b;
     cursor: pointer;
  }
 .checkbox-group label::before{
@@ -272,6 +280,10 @@ label{
 .more-info-on-hover .item-controls li{
     display: inline-block;
 }
+.item-controls li + li,
+.product-share li + li{
+    margin-left: 30px;
+}
 .new-item{
     margin-bottom: 75px;
 }
@@ -358,9 +370,7 @@ ul.item-evaluation>li{
 .join-us-button{
     font-size: 14px;
 }
-.category-wrap .subscribe{
-    margin-top: 60px;
-}
+
 header .top-header{
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -438,23 +448,9 @@ header .bottom-header .user-controls li>span.label{
 
 /* MAIN START */
 
-/* CAROUSEL START */
-.items-carousel .items-carousel-description .items-carousel-text>span,
-.product-wrap .product-description .product-text>span{
-    font-family: 'Harmonia_semibold';
-    font-size: 18px;
-    color: #3c4751;
-}
-.items-carousel .items-carousel-description .items-carousel-text>p,
-.product-wrap .product-description .product-text>p{
-    font-size: 16px;
-    color: #495662;
-    line-height: 1.9;
-    margin-top: 17px;
-}
 .product-wrap .product-description .product-text>p{
     margin-top: 25px;
-    padding-right: 170px;
+    max-width: 79%;
 }
 .items-carousel .items-carousel-description .price-wrapper{
     font-family: 'Harmonia_semibold';
@@ -471,8 +467,6 @@ header .bottom-header .user-controls li>span.label{
     background-position: -20px -59px;
     margin-right: 10px;
 }
-/* CAROUSEL END */
-
 .kit{
     padding: 20px 60px;
     border: 1px solid #eaedef;
@@ -568,7 +562,7 @@ header .bottom-header .user-controls li>span.label{
     color: #34404b;
 }
 .category-wrap{
-    padding-top: 120px;
+    padding: 120px 0 60px 0;
 }
 .aside-section{
     padding: 40px 40px 30px;
@@ -650,7 +644,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 330px;
 }
 .order-info{
-    margin-right: 70px;
+    max-width: 90%;
 }
 .order-form{
     padding: 40px 0;
