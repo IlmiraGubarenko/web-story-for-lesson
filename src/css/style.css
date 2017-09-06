@@ -415,7 +415,10 @@ header .bottom-header .user-controls li>span.label{
 /* HEADER END */
 
 /* MAIN START */
-
+.item-flexslider{
+    position: relative;
+    padding-left: calc(8.3333% + 30px);
+}
 .product-wrap .product-description .product-text>p{
     margin-top: 25px;
     max-width: 79%;
