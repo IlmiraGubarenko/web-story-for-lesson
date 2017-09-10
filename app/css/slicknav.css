@@ -78,7 +78,10 @@
   font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #4c4c4c;
+  background: #fff;
+  border: 2px solid #34404b;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   padding: 5px; }
   .slicknav_menu * {
     -webkit-box-sizing: border-box;
@@ -96,13 +99,14 @@
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  background-color: #222; }
+  background-color: #ff5912; }
 
 .slicknav_nav {
-  color: #fff;
+  color: #34404b;
   margin: 0;
   padding: 0;
-  font-size: 0.875em;
+  font-size: 16px;
+  font-family: 'Harmonia_regular';
   list-style: none;
   overflow: hidden; }
   .slicknav_nav ul {
@@ -122,12 +126,13 @@
     padding: 5px 10px;
     margin: 2px 5px;
     text-decoration: none;
-    color: #fff; }
+    color: #34404b; }
     .slicknav_nav a:hover {
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-      background: #ccc;
-      color: #222; }
+      /*-webkit-border-radius: 6px;*/
+      /*-moz-border-radius: 6px;*/
+      /*border-radius: 6px;*/
+      /*background: #ccc;*/
+      color: #ff5912; }
   .slicknav_nav .slicknav_txtnode {
     margin-left: 15px; }
   .slicknav_nav .slicknav_item a {

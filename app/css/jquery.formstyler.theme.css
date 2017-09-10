@@ -45,7 +45,6 @@
 .jq-number__spin:after {
 	content: '';
 	position: absolute;
-
 	width: 0;
 	height: 0;
 }
