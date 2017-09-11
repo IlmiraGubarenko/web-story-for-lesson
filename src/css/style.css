@@ -561,6 +561,7 @@ header .bottom-header .user-controls li>span.label{
         position: absolute;
         top: 17px;
         right: 25px;
+        z-index: 1;
     }
 }
 /* HEADER END */
