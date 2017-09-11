@@ -36,6 +36,14 @@ button{
 label{
     margin-bottom: 0;
 }
+select, select:hover{
+    color: inherit;
+    background: #fff;
+}
+option, option:hover{
+    color: inherit;
+    background: #fff;
+}
 /* RESET END */
 
 /* DEFAULT CLASSES START */
@@ -809,6 +817,28 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 100px 0 125px;
     background-color: #fff;
 }
+.mobile-filter{
+    margin-bottom: 60px;
+    padding: 50px;
+}
+.mobile-filter select{
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 16px;
+    border: 1px solid #edeff1;
+    color: #34404b;
+}
+.mobile-filter > select + select{
+    margin-top: 5px;
+}
+
+@media (max-width: 991px){
+    .category-wrap{
+        padding: 60px 0;
+    }
+}
+
 .product-carousel{
     width: 330px;
 }
