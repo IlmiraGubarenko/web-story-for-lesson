@@ -199,27 +199,11 @@ html[xmlns] .flexslider .slides {
   bottom: -40px;
   text-align: center;
 }
-.item-flexslider .flex-control-nav {
-  width: auto;
-  bottom: auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
-}
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline;
-}
-.item-flexslider .flex-control-nav li {
-  display: block;
-  margin: 0;
-}
-.item-flexslider .flex-control-nav li + li {
-  margin-top: 10px;
 }
 .flex-control-paging li a {
   width: 11px;
@@ -235,18 +219,6 @@ html[xmlns] .flexslider .slides {
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-.item-flexslider .flex-control-paging li a {
-  background: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  width: 10px;
-  height: 16px;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
-}
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
@@ -255,10 +227,6 @@ html[xmlns] .flexslider .slides {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
-}
-.item-flexslider .flex-control-paging li a.flex-active {
-  background: #ff5912;
-  height: 36px;
 }
 .flex-control-thumbs {
   margin: 70px 0 0;

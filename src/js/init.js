@@ -35,7 +35,6 @@ $( function() {
 
     }
 
-
     range.slider({
         range: true,
         min: 0,
