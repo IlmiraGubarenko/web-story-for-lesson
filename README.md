@@ -27,61 +27,68 @@
 
 ### Стандартные компоненты и классы
 
----
-
 ***Компоненты***
 1. Стилизируем заголовки:
+```
     .title 
     .title.big 
     .title.small
-
+```
 2. Стилизируем стандартные кнопки:
+```
     .btn-default
     .btn-radius
-
+```
 3. Задаем отступы между стандартными блоками:
+```
     .default-section
-
-4. Стилизируем стандартную текстовую информацию: 
+```
+4. Стилизируем стандартную текстовую информацию:
+```
     .default-span
     .default-p
-
+```
 5. Стилизируем дефолтные формы и элементы форм:
+```
     .checkbox-group input
     .checkbox-group label
     .subscribe-form
     .subscribe-input-group
     .subscribe-input-group label
     .subscribe-input
-
+```
 6. Стилизируем стандартные блоки с продукцией:
+```
     .item
     .best-item
     .new-item
-
-7. Выстраиваем в ряд иконки Font-Awesome: 
+```
+7. Выстраиваем в ряд иконки Font-Awesome:
+```
     .custom-icon
-
+```
 8. Стилизируем иконки Font-Awesome в ховерном состоянии:
+```
     .icon-add-to-cart-ic:hover 
     .icon-cart-ic:hover 
     .icon-like-ic:hover 
     .icon-search-ic:hover 
     .icon-share-ic:hover 
-    .icon-user-ic:hover 
-
----
-
+    .icon-user-ic:hover
+```
 ***Классы***
 1. Создаем флекс контейнеры
+```
     .flex-container
-
+```
 2. Выравниваем элементы по горизонтали и вертикали:
+```
     .align-center
     .align-end
     .justify-sp-between
-
+```
 3. Задаем цвет:
+```
     .orange-text
     .light-grey-text
     .red-bg
@@ -91,11 +98,12 @@
     .white-bg
     .light-orange-bg
     .orange-bg
-
+```
 4. Стилизируем боковую панель
+```
     .sidebar-default-style
     .sidebar-default-style .checkbox-group label
-
+```
 ---
 
 **Структура папок**
