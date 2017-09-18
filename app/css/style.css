@@ -159,7 +159,7 @@ option, option:hover{
         font-size: 25px;
     }
     .title.big{
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 .default-section{
@@ -264,7 +264,7 @@ option, option:hover{
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
 }
-.item:hover .item-title{
+.item-title:hover{
     color: #ff5912;
 }
 .item:hover .item-price{
@@ -406,9 +406,11 @@ ul.item-evaluation>li{
     transition: all .3s linear;
     font-family: 'Harmonia_semibold';
     font-size: 16px;
+    position: relative;
 }
 .best-item:hover .add-to-cart-hover{
     opacity: 1;
+    z-index: 99;
 }
 .add-to-cart-hover .icon-add-to-cart-hover-ic{
     margin-right: 10px;
@@ -533,22 +535,25 @@ header .bottom-header .header-nav a+a {
 header .bottom-header .header-nav a:hover{
     color: #ff5912;
 }
-header .bottom-header .user-controls li{
+.user-controls{
+    margin-left: auto;
+}
+.user-controls li{
     position: relative;
 }
-header .bottom-header .user-controls li+li{
+.user-controls li+li{
     margin-left: 28px;
 }
-header .bottom-header .user-controls li>span{
+.user-controls li>span{
     position: absolute;
     bottom: 20px;
     right: 2px;
     padding-top: 4px;
 }
-header .bottom-header .user-controls li>span.label-default{
+.user-controls li>span.label-default{
     background-color: #34404b;
 }
-header .bottom-header .user-controls li>span.label{
+.user-controls li>span.label{
     width: 18px;
     height: 18px;
     font:  10px/1 "Harmonia_light", sans-serif;
@@ -601,7 +606,7 @@ header .bottom-header .user-controls li>span.label{
     max-width: 79%;
 }
 .items-carousel{
-    padding: 230px 0;
+    padding: 195px 0;
     background: url("../img/carousel-img-1.jpg") no-repeat center / cover;
     margin-bottom: 60px;
 }
@@ -839,7 +844,12 @@ header .bottom-header .user-controls li>span.label{
         margin-top: 5px;
     }
 }
-
+.aside-section-title{
+    font-family: 'Harmonia_black';
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 25px;
+}
 .category-wrap{
     padding: 120px 0 60px 0;
 }
@@ -854,6 +864,9 @@ header .bottom-header .user-controls li>span.label{
 }
 .aside-section + .aside-section{
     margin-top: 30px;
+}
+.categories-product li:hover{
+    color: #ff5912;
 }
 .range{
     margin-top: 65px;
@@ -882,6 +895,15 @@ header .bottom-header .user-controls li>span.label{
 .ui-slider .ui-slider-handle {
     width: 10px;
     height: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.ui-slider .ui-slider-handle:focus{
+    outline: none;
+}
+.ui-corner-all{
+    -webkit-border-radius: 0;
+            border-radius: 0;
 }
 .min-value, .max-value{
     position: absolute;
@@ -911,12 +933,6 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-.aside-section-title{
-    font-family: 'Harmonia_black';
-    font-size: 18px;
-    color: #ff5912;
-    margin-bottom: 25px;
 }
 .category-wrap .item{
     margin-bottom: 30px;
@@ -1019,7 +1035,6 @@ input[type=number]::-webkit-outer-spin-button {
 .size-radio:not(:first-child)::before{
     content: '';
     display: inline-block;
-    vertical-align: middle;
     width: 4px;
     height: 1px;
     background: #34404b;
@@ -1029,10 +1044,6 @@ input[type=number]::-webkit-outer-spin-button {
     color: #ff5912;
     font-size: 18px;
 }
-/*.size-radio + .size-radio{*/
-    /*margin-left: 20px;*/
-/*}*/
-
 .product-price{
     font-family: 'Harmonia_black';
     color: #34404b;
@@ -1089,7 +1100,17 @@ input[type=number]::-webkit-outer-spin-button {
         margin-top: 10px;
     }
 }
-/* MAIN END */
+@media (max-width: 599px){
+    .product-carousel{
+        width: 325px;
+    }
+}
+@media (max-width: 479px){
+    .product-carousel{
+        width: 280px;
+    }
+}
+    /* MAIN END */
 
 /* FOOTER START */
 
@@ -1127,9 +1148,6 @@ footer .footer-nav ul>li:hover{
 footer .footer-nav ul>li:hover::before{
     background-color: #ff5912;
 }
-/*footer .footer-nav ul>li+li{*/
-    /*margin-top: 20px;*/
-/*}*/
 footer .payment-methods .payment-methods-title{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
@@ -1165,6 +1183,9 @@ footer .payment-methods ul.payment-methods-icon>li+li{
     }
 }
 @media (max-width: 479px){
+    footer{
+        font-size: 12px;
+    }
     footer .footer-nav ul>li::before{
         margin-right: 4px;
     }
